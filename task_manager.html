@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>To-Do list</title>
+  </head>
+  <body>
+    <div class="to-do-list">
+      <h2>To Do List <img src="task.png" alt="icon" /></h2>
+
+      <div class="row">
+        <input
+          type="text"
+          id="search-box"
+          placeholder="Search tasks"
+          class="search-input"
+        />
+        <input type="text" id="input-box" placeholder="Add your text" />
+        <input type="date" id="due-date" class="due-date" />
+
+        <button id="btn" onclick="createTask()">Add</button>
+        <select id="category-select">
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="study">Study</option>
+        </select>
+
+        <button id="sort-btn" onclick="sortTasksByDate()">Sort</button>
+      </div>
+
+      <ul id="list-container"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

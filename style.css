@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(HD.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+  }
+  
+  .to-do-list {
+    max-width: 540px;
+    border-radius: 10px;
+    padding: 40px 30px 60px;
+    margin: 100px auto 20px;
+    background: lightgray;
+  }
+  
+  .to-do-list h2 {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    color: lightslategray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .to-do-list h2 img {
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  
+  .row {
+    margin-bottom: 25px;
+    font-weight: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #input-box {
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .due-date {
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 16px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  ul li {
+    background-color: whitesmoke;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: sans-serif;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } 
+  
+  .checked {
+    text-decoration: line-through;
+  }
+  
+  ul li cross {
+    width: 40px;
+    height: 40px;
+    color: #555;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  ul li cross:hover {
+    background: #edeef0;
+  }
+  
+  #search-box {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #category-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  ul li.checked {
+    text-decoration: line-through;
+    background-color: #f5f5f5; /* Add a background color for completed tasks */
+  }
+  
+  #category-select:focus,
+  #search-box:focus,
+  #input-box:focus,
+  .due-date:focus {
+    outline: none;
+    border-color: black;
+  }
+  
